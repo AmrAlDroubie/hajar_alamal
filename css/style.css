@@ -71,17 +71,42 @@ a {
 /* ================= Fixed Follow Menu ================== */
 .follow-menu{
   position: fixed;
-  right:0;
+  border-radius: 10px 0px 0px 10px;
   background-color: #000000;
-  color:#fff;
-  padding:13px;
-  right:0;
-  top:40%;
-
+  color: #fff;
+  padding: 13px;
+  right: 0;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 333;
 }
 
 .follow-menu span{
   writing-mode: vertical-lr;
+  margin-bottom: 14px;
+}
+
+
+
+.follow-menu ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.follow-menu a{
+  color:#fff;
+  font-size: 17px;
+  display: block;
+}
+
+
+
+.follow-menu ul li:not(:last-of-type) a{
+  padding-bottom: 10px;
 }
 /* ================= Navbar ================== */
 .navbar{
@@ -239,6 +264,8 @@ a {
   
 }
 
+
+
 .our-work h3::before,.our-work h3::after{
   content:"";
   width:170px;
@@ -246,6 +273,12 @@ a {
   max-width: 95%;
   background-color: #FA9021;
   margin:0 15px
+}
+
+@media(max-width:767px){
+  .our-work h3::before,.our-work h3::after{
+    display: none;
+  }
 }
 
 .next-prev-icons a{
