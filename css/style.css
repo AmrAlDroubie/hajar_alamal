@@ -67,6 +67,22 @@ a {
   text-decoration: none;
 }
 
+
+/* ================= Fixed Follow Menu ================== */
+.follow-menu{
+  position: fixed;
+  right:0;
+  background-color: #000000;
+  color:#fff;
+  padding:13px;
+  right:0;
+  top:40%;
+
+}
+
+.follow-menu span{
+  writing-mode: vertical-lr;
+}
 /* ================= Navbar ================== */
 .navbar{
   background-color: #101820;
@@ -475,6 +491,10 @@ a {
 p.products-desc-text{
   font-size: 18px;
   font-weight: 700;
+}
+
+.carousel-inner{
+  border-radius: 15px;
 }
 
 .carousel-control-prev,.carousel-control-next{
