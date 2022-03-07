@@ -331,9 +331,18 @@ a {
 /* =========================== Contact Page ======================= */
 
 
+
+
 .contact h2{
   font-weight: 700;
   font-size: 30px;
+}
+
+@media(max-width:767px){
+  .contact h2{
+    font-size: 22px;
+    white-space: nowrap;
+  }
 }
 
 .contact h2::before, .contact h2::after{
@@ -356,19 +365,26 @@ a {
 @media(max-width:767px){
   .contact-box{
     max-width: 92%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .contact-box{
-  max-width:750px
+  max-width:940px
 }
 
 .contact-form{
-  width:95%
+  width:95%;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-means{
-  width:95%
+  width:95%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-form input , .contact-form label , .contact-form select   ,.contact-form textarea {
@@ -406,9 +422,43 @@ a {
   padding:7px 0;
   border-radius: 3px;
   transition: 0.3s ;
+  margin-top: 30px;
 }
 
 .contact-form button:hover{
   background-color: #fff;
   color:#000;
+}
+
+.contact-means h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-means li{
+  margin-bottom: 13px;
+}
+
+
+.contact-means ul i{
+  margin-left: 14px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #F3F3F3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.contact-means ul span{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.location-map{
+  border-radius: 15px;
+  height: 250px;
 }
