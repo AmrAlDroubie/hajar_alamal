@@ -326,3 +326,89 @@ a {
   opacity: 60%;
   color:#fff;
 }
+
+
+/* =========================== Contact Page ======================= */
+
+
+.contact h2{
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.contact h2::before, .contact h2::after{
+  content:"";
+  display: block;
+  height: 1.5px;
+  background-color: #000000;
+  width:40%
+}
+
+.contact h2::before{
+  margin-left: auto;
+}
+
+
+.contact h2::after{
+  margin-right: auto;
+}
+
+@media(max-width:767px){
+  .contact-box{
+    max-width: 92%;
+  }
+}
+
+.contact-box{
+  max-width:750px
+}
+
+.contact-form{
+  width:95%
+}
+
+.contact-means{
+  width:95%
+}
+
+.contact-form input , .contact-form label , .contact-form select   ,.contact-form textarea {
+  display: block;
+  width:100%;
+  margin-bottom: 15px;
+}
+
+.contact-form label{
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contact-form select , .contact-form input   , .contact-form textarea{
+  padding:7px 12px;
+  border:1px solid #C4C4C4;
+  border-radius: 7px;
+}
+
+.contact-form textarea{
+  min-height: 100px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact-form button{
+  color:#fff;
+  display: block;
+  width:100%;
+  background-color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  border:1px solid #000;
+  padding:7px 0;
+  border-radius: 3px;
+  transition: 0.3s ;
+}
+
+.contact-form button:hover{
+  background-color: #fff;
+  color:#000;
+}
