@@ -88,6 +88,11 @@ a {
   margin-bottom: 14px;
 }
 
+@media(max-width:767px){
+  .follow-menu span{
+    display: none;
+  }
+}
 
 
 .follow-menu ul{
@@ -215,20 +220,35 @@ a {
 
 
 .header{
-  background: url("../images/header_back.png") no-repeat ;
+  background: url("../images/header_back.jpeg") no-repeat ;
   background-size: 100% 100%;
   padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::after{
+  content:"";
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.137);
+  z-index: 1;
 }
 
 @media(max-width:991px){
   .header{
-    border-radius: 100px;
     padding: 32px;
   }
 }
 
 .header .row{
   min-height: 500px;
+  position: relative;
+  z-index: 333;
 }
 
 .header-text p{
@@ -328,9 +348,17 @@ a {
 }
 
 .about-us-text p{
-  line-height: 1.8;
+  line-height: 2.1;
   font-size: 20px;
   font-weight: 700;
+}
+
+@media(max-width:767px){
+  .about-us-text p{
+    line-height: 1.8;
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
 
 /* =========================== Footer ==================== */
@@ -521,6 +549,13 @@ a {
   font-weight: 700;
 }
 
+@media(max-width:767px){
+  .products h2{
+    font-size: 30px;
+  }
+  
+}
+
 p.products-desc-text{
   font-size: 18px;
   font-weight: 700;
@@ -539,6 +574,10 @@ p.products-desc-text{
   transform: translateY(-50%);
 }
 
+
+.carousel-item{
+  max-height: 400px;
+}
 
 .carousel-control-prev{
   right: 10px;

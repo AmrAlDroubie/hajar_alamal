@@ -61,7 +61,7 @@
                 اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ
                 ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ
             </p>
-            <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-direction="left">
+            <!-- <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-direction="left">
                 <div class="carousel-inner ">
                     <div class="carousel-item active overflow-hidden">
                         <img src="images/carousel_1.png" class="d-block w-100" alt="...">
@@ -83,26 +83,67 @@
                     <i class="fas fa-arrow-left" aria-hidden="true"></i>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> -->
             <div class="more-example my-4">
                 <div class="row">
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box"><img src="images/our_work1.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work1.png" alt=""></div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box"><img src="images/our_work2.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work2.png" alt=""></div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box"><img src="images/our_work3.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work3.png" alt=""></div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box"><img src="images/our_work4.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work4.png" alt=""></div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box"><img src="images/our_work5.png" alt=""></div>
+                        <div class="more-example-box" id="my-box" data-bs-toggle="modal" data-bs-target="#modal"><img
+                                src="images/our_work5.png" alt=""></div>
                     </div>
                 </div>
             </div>
+
+            <!-- pop up -->
+            <div class="modal fade" tabindex="-1" id="modal">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content p-3">
+
+                        <div class="modal-header justify-content-center">
+                            <h5 class="modal-title  fw-bold">أعمالنا</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div id="carousel" class="carousel pro-carousel slide " data-bs-ride="carousel" data-bs-direction="left">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item  overflow-hidden">
+                                    <img src="images/carousel_1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item overflow-hidden">
+                                    <img src="images/carousel_2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item overflow-hidden">
+                                    <img src="images/our_work2.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                                data-bs-slide="prev">
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                                data-bs-slide="next">
+                                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
@@ -121,6 +162,12 @@
                             <div>
                                 <i class="fas fa-location-dot me-2"></i>
                                 <span>الطيبه</span>
+                            </div>
+                            <div class="ms-md-auto  my-3 my-md-0">
+                                <i class="fas fa-envelope me-2"></i>
+                                <span>
+                                    sohel.hy@gmail.com
+                                </span>
                             </div>
                             <div class="ms-md-auto  my-3 my-md-0">
                                 <i class="fas fa-phone-flip me-2"></i>
