@@ -673,9 +673,18 @@ p.products-desc-text{
   height: 100px;
 }
 
-.pro-carousel-indicators > div:not(:last-of-type){
-  margin-left: 20px;
+@media(max-width:991.98px){
+  .pro-carousel-indicators > div{
+    margin-bottom: 15px;
+  }
 }
+
+@media(min-width:767px){
+  .pro-carousel-indicators > div:not(:last-of-type){
+    margin-left: 20px;
+  }
+}
+
 
 .pro-carousel-indicators > div img{
   width: 100%;
