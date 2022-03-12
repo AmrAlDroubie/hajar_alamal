@@ -61,46 +61,36 @@
                 اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ
                 ﺣﺠﺮ اﻟﺄﻣﻞ اﻫﻠﺎً ﺑﻜﻢ ﻓﻲ ﺣﺠﺮ اﻟﺄﻣﻞ
             </p>
-            <!-- <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-direction="left">
-                <div class="carousel-inner ">
-                    <div class="carousel-item active overflow-hidden">
-                        <img src="images/carousel_1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item overflow-hidden">
-                        <img src="images/carousel_1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item overflow-hidden">
-                        <img src="images/carousel_1.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
-                    data-bs-slide="prev">
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel"
-                    data-bs-slide="next">
-                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div> -->
             <div class="more-example my-4">
                 <div class="row">
-                    <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work1.png" alt=""></div>
+                    <div class="col-12">
+                        <div class="active-image">
+                            <img src="images/our_work1.png" alt="" class='d-block w-100 '>
+                        </div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work2.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal" data-num="0"><img
+                                src="images/our_work1.png" alt=""></div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work3.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal" data-num="1"><img
+                                src="images/our_work2.png" alt=""></div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal"><img src="images/our_work4.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal" data-num="2"><img
+                                src="images/our_work3.png" alt=""></div>
                     </div>
                     <div class="col-6 col-lg col-m3">
-                        <div class="more-example-box" id="my-box" data-bs-toggle="modal" data-bs-target="#modal"><img
-                                src="images/our_work5.png" alt=""></div>
+                        <div class="more-example-box" data-bs-toggle="modal" data-bs-target="#modal" data-num="3"><img
+                                src="images/our_work4.png" alt=""></div>
+                    </div>
+                    <div class="col-6 col-lg col-m3">
+                        <div class="more-example-box" id="my-box" data-bs-toggle="modal" data-bs-target="#modal"
+                            data-num="4"><img src="images/our_work5.png" alt=""></div>
+                    </div>
+                    <div class="col-6 col-lg col-m3">
+                        <div class="more-example-box" id="my-box" data-bs-toggle="modal" data-bs-target="#modal"
+                            data-num="5"><img src="images/our_work6.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -109,41 +99,82 @@
             <div class="modal fade" tabindex="-1" id="modal">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content p-3">
-
                         <div class="modal-header justify-content-center">
                             <h5 class="modal-title  fw-bold">أعمالنا</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
-                        <div id="carousel" class="carousel pro-carousel slide " data-bs-ride="carousel" data-bs-direction="left">
-                            <div class="carousel-inner ">
-                                <div class="carousel-item  overflow-hidden">
-                                    <img src="images/carousel_1.png" class="d-block w-100" alt="...">
+                        <div id="pro-carousel" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <!-- item -->
+                                <div class="carousel-item active">
+                                    <img src="images/our_work1.png" class="d-block w-100" alt="...">
                                 </div>
-                                <div class="carousel-item overflow-hidden">
-                                    <img src="images/carousel_2.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item overflow-hidden">
+                                <!-- item -->
+                                <div class="carousel-item">
                                     <img src="images/our_work2.png" class="d-block w-100" alt="...">
                                 </div>
+                                <!-- item -->
+                                <div class="carousel-item">
+                                    <img src="images/our_work3.png" class="d-block w-100" alt="...">
+                                </div>
+                                <!-- item -->
+                                <div class="carousel-item">
+                                    <img src="images/our_work4.png" class="d-block w-100" alt="...">
+                                </div>
+                                <!-- item -->
+                                <div class="carousel-item">
+                                    <img src="images/our_work5.png" class="d-block w-100" alt="...">
+                                </div>
+                                <!-- item -->
+                                <div class="carousel-item">
+                                    <img src="images/our_work6.png" class="d-block w-100" alt="...">
+                                </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#pro-carousel"
                                 data-bs-slide="prev">
                                 <i class="fas fa-arrow-right" aria-hidden="true"></i>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                            <button class="carousel-control-next" type="button" data-bs-target="#pro-carousel"
                                 data-bs-slide="next">
                                 <i class="fas fa-arrow-left" aria-hidden="true"></i>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
+                        <!-- indicators -->
+                        <div class="d-flex justify-content-center my-3 pro-carousel-indicators">
+                            <!-- indicator item -->
+                            <div type="button" data-bs-target="#pro-carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1">
+                                <img src="images/our_work1.png" alt="">
+                            </div>
+                            <!-- indicator item -->
+                            <div type="button" data-bs-target="#pro-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+                                <img src="images/our_work2.png" alt="">
+                            </div>
+                            <!-- indicator item -->
+                            <div type="button" data-bs-target="#pro-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+                                <img src="images/our_work3.png" alt="">
+                            </div>
+                            <!-- indicator item -->
+                            <div type="button" data-bs-target="#pro-carousel" data-bs-slide-to="3" aria-label="Slide 3">
+                                <img src="images/our_work4.png" alt="">
+                            </div>
+                            <!-- indicator item -->
+                            <div type="button" data-bs-target="#pro-carousel" data-bs-slide-to="4" aria-label="Slide 3">
+                                <img src="images/our_work5.png" alt="">
+                            </div>
+                            <!-- indicator item -->
+                            <div type="button" data-bs-target="#pro-carousel" data-bs-slide-to="5" aria-label="Slide 3">
+                                <img src="images/our_work6.png" alt="">
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
-
-
         </div>
     </div>
 
