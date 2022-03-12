@@ -221,12 +221,14 @@ a {
 
 .header{
   background: url("../images/header_back.jpeg") no-repeat ;
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 25px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
+
+
 
 .header::after{
   content:"";
@@ -238,6 +240,16 @@ a {
   background-color: rgba(0, 0, 0, 0.137);
   z-index: 1;
 }
+
+/* @media(max-width:767px){
+  .header{
+    background-image: none;
+    background-color: none;
+  }
+  .header::after{
+   content:none
+  }
+} */
 
 @media(max-width:991px){
   .header{
