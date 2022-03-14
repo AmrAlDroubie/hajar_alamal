@@ -211,7 +211,7 @@ a {
 /* =================== Header ===================== */
 
 .header {
-  padding: 25px;
+  padding: 25px 0;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -259,10 +259,16 @@ a {
 .header-video {
   background: url("../images/header_back.jpeg");
   background-size: cover;
-  min-height: 300px;
+  min-height: 480px;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+
+@media (max-width: 776px) {
+  .header-video {
+    min-height: 300px;
+  }
 }
 
 .header-video::before {
@@ -302,6 +308,17 @@ a {
     box-shadow: 0 0 0 10px rgba(0, 179, 255, 0), 0 0 0 20px rgba(0, 179, 255, 0);
   }
 }
+
+/* ================ Video PopUp  ==================*/
+.video-dialog {
+  max-width: 800px;
+}
+
+.video-dialog iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* =========================  Our Work ====================== */
 
 .our-work h3 {
@@ -362,6 +379,10 @@ a {
   width: 100%;
 }
 
+#our-work-carousel .carousel-item {
+  max-height: none;
+}
+
 /* ========================== About US ===================== */
 .about-us {
   background: rgb(221 220 220 / 44%);
@@ -386,6 +407,7 @@ a {
     font-weight: 600;
   }
 }
+
 
 /* =========================== Footer ==================== */
 .footer {

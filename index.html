@@ -65,12 +65,12 @@
 
     <!-- ======================= Header ======================== -->
     <div class="container">
-        <header class="header my-4">
+        <header class="header">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-4">
                     <div class="header-text text-lg-start text-center">
                         <div class="header-image ">
-                            <img src="images/footer_logo.png" class=" d-block mx-lg-0 mx-auto" alt="">
+                            <img src="images/footer_logo.png" class=" d-block my-2 mx-auto" alt="">
                         </div>
                         <h1 class=" fw-bold mb-4">
                             أهلا بكم في حجر الأمل
@@ -90,9 +90,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-8">
                     <div class="header-video my-lg-0 my-4">
-                        <a href="https://www.youtube.com/watch?v=LNYm40RmRzs">
+                        <a href="https://www.youtube.com/watch?v=LNYm40RmRzs" id="video-link" data-bs-toggle="modal"
+                            data-bs-target="#video-pop">
                             <i class='fas fa-play'></i>
                         </a>
                     </div>
@@ -102,28 +103,47 @@
     </div>
 
 
-    <!-- ======================= Carousel ===================== -->
-    <div class="container my-5">
-        <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-direction="left">
-            <div class="carousel-inner ">
-                <div class="carousel-item active overflow-hidden">
-                    <img src="images/carousel_1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item overflow-hidden">
-                    <img src="images/carousel_1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item overflow-hidden">
-                    <img src="images/carousel_1.png" class="d-block w-100" alt="...">
+    <!-- ================== Video Pop Up ======================= -->
+    <div class="modal fade" tabindex="-1" id="video-pop">
+        <div class="modal-dialog video-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="560" height="380" src="https://www.youtube.com/embed/LNYm40RmRzs?controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <i class="fas fa-arrow-left" aria-hidden="true"></i>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+    </div>
+
+
+    <!-- ======================= Carousel ===================== -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-direction="left">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active overflow-hidden">
+                            <img src="images/carousel_1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item overflow-hidden">
+                            <img src="images/carousel_1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item overflow-hidden">
+                            <img src="images/carousel_1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ======================== Our Work ======================= -->
@@ -134,48 +154,137 @@
                     أعمالنا
                 </h3>
                 <div class="next-prev-icons my-md-0 my-3">
-                    <a href="#" class="me-3"><i class="fa-solid fa-angle-right"></i></a>
-                    <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="#" class="me-3" data-bs-target="#our-work-carousel" data-bs-slide="prev"><i
+                            class="fa-solid fa-angle-right"></i></a>
+                    <a href="#" data-bs-target="#our-work-carousel" data-bs-slide="next"><i
+                            class="fa-solid fa-angle-left"></i></a>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="our-work-box">
-                        <img src="images/our_work1.png" alt="">
-                        <p>أرضيات ﺣﺠﺮﻳﺔ</p>
+            <div id="our-work-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work1.png" alt="">
+                                    <p>أرضيات ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work2.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work3.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work4.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work5.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work6.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="our-work-box">
-                        <img src="images/our_work2.png" alt="">
-                        <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work1.png" alt="">
+                                    <p>أرضيات ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work2.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work3.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work4.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work5.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work6.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="our-work-box">
-                        <img src="images/our_work3.png" alt="">
-                        <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="our-work-box">
-                        <img src="images/our_work4.png" alt="">
-                        <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="our-work-box">
-                        <img src="images/our_work5.png" alt="">
-                        <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="our-work-box">
-                        <img src="images/our_work6.png" alt="">
-                        <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work1.png" alt="">
+                                    <p>أرضيات ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work2.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work3.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work4.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work5.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-work-box">
+                                    <img src="images/our_work6.png" alt="">
+                                    <p>أﺭﺿﻴﺎت ﺣﺠﺮﻳﺔ</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -200,7 +309,7 @@
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
                     <div class="about-us-image">
-                        <img src="images/aboutus_hero.png" alt="">
+                        <img src="images/aboutus_hero.png" class='d-block ms-auto' alt="">
                     </div>
                 </div>
             </div>
@@ -272,6 +381,12 @@
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        let videoBtn = document.getElementById("video-link");
+        videoBtn.onclick = function (e) {
+            e.preventDefault();
+        }
+    </script>
 </body>
 
 </html>
